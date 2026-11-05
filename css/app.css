@@ -319,3 +319,25 @@
   .print-report .modal-bg, .print-report .modal header button, .print-report .modal footer { display: none; }
   .print-report .modal { box-shadow: none; border: 0; width: 100%; max-height: none; transform: none; }
 }
+
+/* Dark theme refinements */
+:root[data-theme='dark'] .side { background: var(--side); color: var(--side-ink); border-right: 1px solid var(--line); }
+:root[data-theme='dark'] .nav-label { color: #5d626e; }
+:root[data-theme='dark'] .nav a { color: var(--side-ink); }
+:root[data-theme='dark'] .nav a:hover { background: rgba(255, 255, 255, .045); color: var(--ink); }
+:root[data-theme='dark'] .nav a.on { background: rgba(60, 194, 169, .1); color: var(--ink); box-shadow: inset 2px 0 0 var(--brand); }
+:root[data-theme='dark'] .nav a .badge { background: #c94a4a; }
+:root[data-theme='dark'] .org-card { background: rgba(255, 255, 255, .035); border: 1px solid var(--line); }
+:root[data-theme='dark'] .org-card .live { color: var(--good); }
+:root[data-theme='dark'] .side-link { color: #7b808c; }
+:root[data-theme='dark'] .brand-mark { background: linear-gradient(135deg, #2fae98, #1b6f63); box-shadow: 0 4px 14px rgba(60, 194, 169, .18); }
+:root[data-theme='dark'] .top { background: color-mix(in srgb, var(--bg) 82%, transparent); }
+:root[data-theme='dark'] .cover { background: radial-gradient(420px 260px at 100% 0%, rgba(60, 194, 169, .22), transparent 70%), linear-gradient(135deg, #12211f, #153a35 60%, #1a4a43); border: 1px solid #22433e; }
+:root[data-theme='dark'] .cover::after { background: rgba(255, 255, 255, .04); }
+:root[data-theme='dark'] .cover .cmp .b { background: rgba(255, 255, 255, .12); }
+:root[data-theme='dark'] .cover .cmp .b i { background: #9be6d6; }
+:root[data-theme='dark'] .tl.flag { background: color-mix(in srgb, var(--high) 8%, var(--card)); }
+:root[data-theme='dark'] .alert .q { background: color-mix(in srgb, var(--high) 8%, var(--card)); }
+:root[data-theme='dark'] .st-Escalated { background: #221f36; color: #c3bcf5; }
+:root[data-theme='dark'] .alert.Escalated { border-left-color: #9d8cf0; }
+:root[data-theme='dark'] .scrim { background: rgba(0, 0, 0, .6); }
